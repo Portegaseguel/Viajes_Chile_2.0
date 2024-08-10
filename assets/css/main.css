@@ -28,7 +28,7 @@ hr {
 .carousel .carousel-item img {
   height: 100%;
   border-radius: 25px;
-  object-fit: cover;
+  object-fit: fill;
 }
 .carousel .carousel-indicators button {
   height: 10px;
