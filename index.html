@@ -5,42 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Viajes Chile</title>
+    <title>VIAJES CHILE</title>
 
     <link rel="shortcut icon" href="./assets/img/favicon-16x16.png" type="image/x-icon">
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet"
     >
 
-    <!-- Bootstrap CSS -->
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-QWTKzPpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-    crossorigin="anonymous"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKzPpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous"
     >
 
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
 <body>
 
-    <!-- Navbar -->
     <header id="inicio">
+
         <nav
             class="navbar navbar-expand-lg navbar-dark fixed-top"
             id="navbar"
             style="background-color: transparent;"
         >
+
             <div class="container">
 
                 <a class="navbar-brand" href="#inicio">
+
                     <img
                         src="./assets/img/viajes.svg"
                         alt="Logo Viajes Chile"
@@ -48,7 +48,9 @@
                         height="24"
                         class="d-inline-block align-text-top"
                     >
+
                     Viajes Chile
+
                 </a>
 
                 <button
@@ -60,13 +62,20 @@
                     aria-expanded="false"
                     aria-label="Abrir navegación"
                 >
+
                     <span class="navbar-toggler-icon"></span>
+
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                >
+
                     <ul class="navbar-nav ms-auto">
 
                         <li class="nav-item">
+
                             <a
                                 class="nav-link active"
                                 aria-current="page"
@@ -74,41 +83,60 @@
                             >
                                 Inicio
                             </a>
+
                         </li>
 
                         <li class="nav-item d-none d-md-block">
-                            <a class="nav-link" href="#about-us">
-                                Quiénes somos
+
+                            <a
+                                class="nav-link"
+                                href="#about-us"
+                            >
+                                Quiénes Somos
                             </a>
+
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#featured">
+
+                            <a
+                                class="nav-link"
+                                href="#featured"
+                            >
                                 Destacados
                             </a>
+
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#contacto">
+
+                            <a
+                                class="nav-link"
+                                href="#myForm"
+                            >
                                 Contacto
                             </a>
+
                         </li>
 
                     </ul>
+
                 </div>
 
             </div>
+
         </nav>
+
     </header>
 
 
-    <!-- Carrusel -->
+    <!-- CARRUSEL -->
+
     <div class="container">
 
         <div
             id="carouselExampleCaptions"
             class="carousel slide"
-            data-bs-ride="carousel"
         >
 
             <div class="carousel-indicators">
@@ -150,11 +178,14 @@
                     >
 
                     <div class="carousel-caption d-none d-md-block">
+
                         <h5>Descubre Chile</h5>
+
                         <p>
                             Explora paisajes únicos, cultura y experiencias
                             a lo largo del país.
                         </p>
+
                     </div>
 
                 </div>
@@ -165,15 +196,18 @@
                     <img
                         src="./assets/img/carousel2.jpg"
                         class="d-block w-100"
-                        alt="Destino turístico en Chile"
+                        alt="Destino turístico de Chile"
                     >
 
                     <div class="carousel-caption d-none d-md-block">
+
                         <h5>Viajes inolvidables</h5>
+
                         <p>
-                            Encuentra destinos destacados desde el norte
+                            Descubre destinos desde el norte
                             hasta la Patagonia.
                         </p>
+
                     </div>
 
                 </div>
@@ -184,15 +218,18 @@
                     <img
                         src="./assets/img/carousel3.jpg"
                         class="d-block w-100"
-                        alt="Naturaleza y aventura en Chile"
+                        alt="Naturaleza de Chile"
                     >
 
                     <div class="carousel-caption d-none d-md-block">
+
                         <h5>Planifica tu próxima aventura</h5>
+
                         <p>
-                            Conoce lugares, rutas y experiencias para
+                            Conoce paisajes y experiencias para
                             recorrer Chile.
                         </p>
+
                     </div>
 
                 </div>
@@ -206,6 +243,7 @@
                 data-bs-target="#carouselExampleCaptions"
                 data-bs-slide="prev"
             >
+
                 <span
                     class="carousel-control-prev-icon"
                     aria-hidden="true"
@@ -214,6 +252,7 @@
                 <span class="visually-hidden">
                     Anterior
                 </span>
+
             </button>
 
 
@@ -223,6 +262,7 @@
                 data-bs-target="#carouselExampleCaptions"
                 data-bs-slide="next"
             >
+
                 <span
                     class="carousel-control-next-icon"
                     aria-hidden="true"
@@ -231,6 +271,7 @@
                 <span class="visually-hidden">
                     Siguiente
                 </span>
+
             </button>
 
         </div>
@@ -238,26 +279,33 @@
     </div>
 
 
-    <!-- Quiénes somos -->
-    <section id="about-us" class="container my-5">
+    <!-- QUIÉNES SOMOS -->
+
+    <section
+        id="about-us"
+        class="container my-5"
+    >
 
         <div class="row">
 
             <div class="col-12 text-center">
+
                 <h2>¿Quiénes somos?</h2>
+
                 <hr>
+
             </div>
 
         </div>
 
 
-        <div class="row align-items-center">
+        <div class="row">
 
             <div class="col-md-6">
 
                 <img
                     src="./assets/img/quienes-somos.jpg"
-                    alt="Experiencias de viaje en Chile"
+                    alt="Viajes y turismo en Chile"
                     id="quienes-somos"
                     class="img-fluid hide-on-small"
                 >
@@ -270,14 +318,19 @@
                 <p>
                     Viajes Chile es una propuesta digital orientada a mostrar
                     destinos turísticos, experiencias y paisajes representativos
-                    del país, facilitando la exploración de distintas alternativas
-                    para quienes desean conocer Chile.
+                    del país.
                 </p>
 
                 <p>
-                    El sitio presenta destinos destacados, información visual,
-                    referencias de viaje y canales de contacto dentro de una
-                    experiencia responsive diseñada para distintos dispositivos.
+                    El sitio reúne distintos destinos y referencias de viaje
+                    dentro de una experiencia visual diseñada para adaptarse
+                    tanto a computadores como a dispositivos móviles.
+                </p>
+
+                <p>
+                    Desde el desierto del norte hasta los bosques y lagos del sur,
+                    Chile ofrece una amplia variedad de paisajes y experiencias
+                    para descubrir.
                 </p>
 
             </div>
@@ -287,14 +340,21 @@
     </section>
 
 
-    <!-- Destacados -->
-    <section id="featured" class="container my-5">
+    <!-- DESTACADOS -->
+
+    <section
+        id="featured"
+        class="container my-5"
+    >
 
         <div class="row">
 
             <div class="col-12 text-center">
+
                 <h2>Destacados</h2>
+
                 <hr>
+
             </div>
 
         </div>
@@ -302,7 +362,9 @@
 
         <div class="row g-0">
 
-            <!-- Región de Los Lagos -->
+
+            <!-- LOS LAGOS -->
+
             <div class="card col-md-6">
 
                 <div class="row g-0">
@@ -327,8 +389,9 @@
                             </h5>
 
                             <p class="card-text text-dark">
-                                Lagos, volcanes y bosques forman uno de los
-                                paisajes más característicos del sur de Chile.
+                                Lagos, volcanes y bosques forman uno de
+                                los paisajes más característicos del sur
+                                de Chile.
                             </p>
 
 
@@ -363,7 +426,8 @@
             </div>
 
 
-            <!-- Desierto de Atacama -->
+            <!-- ATACAMA -->
+
             <div class="card col-md-6">
 
                 <div class="row g-0">
@@ -388,9 +452,9 @@
                             </h5>
 
                             <p class="card-text text-dark">
-                                Paisajes desérticos, salares y cielos privilegiados
-                                en uno de los destinos más reconocidos del norte
-                                de Chile.
+                                Paisajes desérticos, salares y cielos
+                                privilegiados en uno de los destinos
+                                más reconocidos del norte de Chile.
                             </p>
 
 
@@ -425,7 +489,8 @@
             </div>
 
 
-            <!-- Norte Grande -->
+            <!-- NORTE GRANDE -->
+
             <div class="card col-md-6">
 
                 <div class="row g-0">
@@ -450,8 +515,9 @@
                             </h5>
 
                             <p class="card-text text-dark">
-                                Descubre la costa, el altiplano y los contrastes
-                                naturales del extremo norte del país.
+                                Descubre la costa, el altiplano y los
+                                contrastes naturales del extremo norte
+                                del país.
                             </p>
 
 
@@ -486,7 +552,8 @@
             </div>
 
 
-            <!-- Bosques del Sur -->
+            <!-- BOSQUES DEL SUR -->
+
             <div class="card col-md-6">
 
                 <div class="row g-0">
@@ -511,8 +578,9 @@
                             </h5>
 
                             <p class="card-text text-dark">
-                                Recorre senderos, bosques nativos y paisajes
-                                naturales en los destinos verdes del sur de Chile.
+                                Recorre senderos, bosques nativos
+                                y paisajes naturales en los destinos
+                                verdes del sur de Chile.
                             </p>
 
 
@@ -551,14 +619,18 @@
     </section>
 
 
-    <!-- Contacto -->
-    <section id="contacto" class="container my-5">
+    <!-- CONTACTO -->
+
+    <section class="container my-5">
 
         <div class="row">
 
             <div class="col-12 text-center">
+
                 <h2>Contacto</h2>
+
                 <hr>
+
             </div>
 
         </div>
@@ -566,10 +638,16 @@
 
         <div class="row">
 
-            <!-- Formulario -->
-            <form id="myForm" class="col-md-6 my-5">
+
+            <!-- FORMULARIO -->
+
+            <form
+                id="myForm"
+                class="col-md-6 my-5"
+            >
 
                 <div class="row">
+
 
                     <div class="col-md-6 mb-3">
 
@@ -646,8 +724,7 @@
                     <textarea
                         class="form-control"
                         id="contactMessage"
-                        rows="4"
-                        placeholder="Escribe tu mensaje"
+                        rows="3"
                         required
                     ></textarea>
 
@@ -696,47 +773,128 @@
             </form>
 
 
-            <!-- Información del proyecto -->
+            <!-- MODAL -->
+
             <div
-                class="col-md-6 d-flex flex-column justify-content-center text-light"
+                class="modal fade"
+                id="termsModal"
+                tabindex="-1"
+                aria-labelledby="termsModalLabel"
+                aria-hidden="true"
             >
 
-                <h3>
-                    Explora Chile
-                </h3>
+                <div class="modal-dialog">
 
-                <p>
-                    Este sitio corresponde a un proyecto demostrativo de
-                    desarrollo Frontend creado para presentar una experiencia
-                    turística responsive e interactiva.
-                </p>
+                    <div class="modal-content">
 
-                <p>
-                    La información, destinos y valores utilizados tienen fines
-                    exclusivamente demostrativos.
-                </p>
+                        <div class="modal-header">
+
+                            <h5
+                                class="modal-title text-dark"
+                                id="termsModalLabel"
+                            >
+                                Términos y Condiciones
+                            </h5>
+
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Cerrar"
+                            ></button>
+
+                        </div>
 
 
-                <div class="mt-3">
+                        <div class="modal-body">
 
-                    <span class="badge text-bg-light me-2 mb-2">
-                        HTML5
+                            Este sitio corresponde a un proyecto
+                            demostrativo de desarrollo Frontend.
+
+                            Los destinos, precios e información
+                            mostrados son referenciales y no
+                            corresponden a una agencia de viajes
+                            comercial.
+
+                        </div>
+
+
+                        <div class="modal-footer">
+
+                            <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                            >
+                                Cerrar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- INFORMACIÓN DEL PROYECTO -->
+
+            <div
+                class="col-md-6 d-flex flex-column justify-content-center"
+            >
+
+                <div class="mb-3 d-flex align-items-center">
+
+                    <i
+                        class="fa-solid fa-code"
+                        style="color: #ffffff; margin-right: 10px;"
+                    ></i>
+
+                    <span class="text-white">
+                        Proyecto Frontend demostrativo
                     </span>
 
-                    <span class="badge text-bg-light me-2 mb-2">
-                        CSS3
+                </div>
+
+
+                <div class="mb-3 d-flex align-items-center">
+
+                    <i
+                        class="fa-brands fa-html5"
+                        style="color: #ffffff; margin-right: 10px;"
+                    ></i>
+
+                    <span class="text-white">
+                        HTML5 · CSS3 · SCSS
                     </span>
 
-                    <span class="badge text-bg-light me-2 mb-2">
+                </div>
+
+
+                <div class="mb-3 d-flex align-items-center">
+
+                    <i
+                        class="fa-brands fa-js"
+                        style="color: #ffffff; margin-right: 10px;"
+                    ></i>
+
+                    <span class="text-white">
                         JavaScript
                     </span>
 
-                    <span class="badge text-bg-light me-2 mb-2">
-                        Bootstrap
-                    </span>
+                </div>
 
-                    <span class="badge text-bg-light me-2 mb-2">
-                        SCSS
+
+                <div class="mb-3 d-flex align-items-center">
+
+                    <i
+                        class="fa-brands fa-bootstrap"
+                        style="color: #ffffff; margin-right: 10px;"
+                    ></i>
+
+                    <span class="text-white">
+                        Bootstrap 5
                     </span>
 
                 </div>
@@ -748,87 +906,32 @@
     </section>
 
 
-    <!-- Modal términos y condiciones -->
-    <div
-        class="modal fade"
-        id="termsModal"
-        tabindex="-1"
-        aria-labelledby="termsModalLabel"
-        aria-hidden="true"
-    >
+    <!-- FONT AWESOME -->
 
-        <div class="modal-dialog">
-
-            <div class="modal-content">
-
-                <div class="modal-header">
-
-                    <h5
-                        class="modal-title text-dark"
-                        id="termsModalLabel"
-                    >
-                        Términos y condiciones
-                    </h5>
-
-                    <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Cerrar"
-                    ></button>
-
-                </div>
-
-
-                <div class="modal-body">
-
-                    Este sitio corresponde a un proyecto demostrativo de
-                    desarrollo Frontend.
-
-                    La información, destinos y valores mostrados son
-                    referenciales y no corresponden a una agencia de viajes
-                    comercial.
-
-                </div>
-
-
-                <div class="modal-footer">
-
-                    <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                    >
-                        Cerrar
-                    </button>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <!-- Font Awesome -->
     <script
         src="https://kit.fontawesome.com/53396029bc.js"
         crossorigin="anonymous"
     ></script>
 
-    <!-- jQuery -->
+
+    <!-- BOOTSTRAP -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"
+    ></script>
+
+
+    <!-- JQUERY -->
+
     <script
         src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"
     ></script>
 
-    <!-- Bootstrap JS Bundle -->
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        crossorigin="anonymous"
-    ></script>
 
-    <!-- Custom JS -->
+    <!-- CUSTOM JS -->
+
     <script src="./assets/js/index.js"></script>
 
 </body>
