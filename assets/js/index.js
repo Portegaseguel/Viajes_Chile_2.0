@@ -20,14 +20,6 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
 event.preventDefault();
 
 alert('Formulario enviado con éxito!');
-});
-
-let myModal = document.getElementById('myModal')
-let myInput = document.getElementById('myInput')
-
-myModal.addEventListener('shown.bs.modal', function () {
-myInput.focus()
 })
-
 
 
