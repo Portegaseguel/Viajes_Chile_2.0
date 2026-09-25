@@ -1,939 +1,274 @@
-<!DOCTYPE html>
-<html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>VIAJES CHILE</title>
-
-    <link rel="shortcut icon" href="./assets/img/favicon-16x16.png" type="image/x-icon">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet"
-    >
-
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-QWTKzPpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-        crossorigin="anonymous"
-    >
-
-    <link rel="stylesheet" href="./assets/css/main.css">
-</head>
-
-<body>
-
-    <header id="inicio">
-
-        <nav
-            class="navbar navbar-expand-lg navbar-dark fixed-top"
-            id="navbar"
-            style="background-color: transparent;"
-        >
-
-            <div class="container">
-
-                <a class="navbar-brand" href="#inicio">
-
-                    <img
-                        src="./assets/img/viajes.svg"
-                        alt="Logo Viajes Chile"
-                        width="30"
-                        height="24"
-                        class="d-inline-block align-text-top"
-                    >
-
-                    Viajes Chile
-
-                </a>
-
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Abrir navegación"
-                >
-
-                    <span class="navbar-toggler-icon"></span>
-
-                </button>
-
-                <div
-                    class="collapse navbar-collapse"
-                    id="navbarSupportedContent"
-                >
-
-                    <ul class="navbar-nav ms-auto">
-
-                        <li class="nav-item">
-
-                            <a
-                                class="nav-link active"
-                                aria-current="page"
-                                href="#inicio"
-                            >
-                                Inicio
-                            </a>
-
-                        </li>
-
-                        <li class="nav-item d-none d-md-block">
-
-                            <a
-                                class="nav-link"
-                                href="#about-us"
-                            >
-                                Quiénes Somos
-                            </a>
-
-                        </li>
-
-                        <li class="nav-item">
-
-                            <a
-                                class="nav-link"
-                                href="#featured"
-                            >
-                                Destacados
-                            </a>
-
-                        </li>
-
-                        <li class="nav-item">
-
-                            <a
-                                class="nav-link"
-                                href="#myForm"
-                            >
-                                Contacto
-                            </a>
-
-                        </li>
-
-                    </ul>
-
-                </div>
-
-            </div>
-
-        </nav>
-
-    </header>
-
-
-    <!-- CARRUSEL -->
-
-    <div class="container">
-
-        <div
-            id="carouselExampleCaptions"
-            class="carousel slide"
-        >
-
-            <div class="carousel-indicators">
-
-                <button
-                    type="button"
-                    data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide-to="0"
-                    class="active"
-                    aria-current="true"
-                    aria-label="Destino 1"
-                ></button>
-
-                <button
-                    type="button"
-                    data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide-to="1"
-                    aria-label="Destino 2"
-                ></button>
-
-                <button
-                    type="button"
-                    data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide-to="2"
-                    aria-label="Destino 3"
-                ></button>
-
-            </div>
-
-
-            <div class="carousel-inner">
-
-                <div class="carousel-item active">
-
-                    <img
-                        src="./assets/img/carousel1.jpg"
-                        class="d-block w-100"
-                        alt="Paisaje turístico de Chile"
-                    >
-
-                    <div class="carousel-caption d-none d-md-block">
-
-                        <h5>Descubre Chile</h5>
-
-                        <p>
-                            Explora paisajes únicos, cultura y experiencias
-                            a lo largo del país.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="carousel-item">
-
-                    <img
-                        src="./assets/img/carousel2.jpg"
-                        class="d-block w-100"
-                        alt="Destino turístico de Chile"
-                    >
-
-                    <div class="carousel-caption d-none d-md-block">
-
-                        <h5>Viajes inolvidables</h5>
-
-                        <p>
-                            Descubre destinos desde el norte
-                            hasta la Patagonia.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="carousel-item">
-
-                    <img
-                        src="./assets/img/carousel3.jpg"
-                        class="d-block w-100"
-                        alt="Naturaleza de Chile"
-                    >
-
-                    <div class="carousel-caption d-none d-md-block">
-
-                        <h5>Planifica tu próxima aventura</h5>
-
-                        <p>
-                            Conoce paisajes y experiencias para
-                            recorrer Chile.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev"
-            >
-
-                <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                ></span>
-
-                <span class="visually-hidden">
-                    Anterior
-                </span>
-
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
-
-
-            <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next"
-            >
-
-                <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                ></span>
-
-                <span class="visually-hidden">
-                    Siguiente
-                </span>
-
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
             </button>
-
         </div>
-
     </div>
 
-
-    <!-- QUIÉNES SOMOS -->
-
-    <section
-        id="about-us"
-        class="container my-5"
-    >
-
+    <section  id="about-us" class="container my-5">
         <div class="row">
-
             <div class="col-12 text-center">
-
                 <h2>¿Quiénes somos?</h2>
-
                 <hr>
-
             </div>
-
         </div>
-
-
         <div class="row">
-
             <div class="col-md-6">
-
-                <img
-                    src="./assets/img/quienes-somos.jpg"
-                    alt="Viajes y turismo en Chile"
-                    id="quienes-somos"
-                    class="img-fluid hide-on-small"
-                >
-
+                <img src="./assets/img/quienes-somos.jpg" alt="quienes somos" id="quienes-somos" class="img-fluid hide-on-small">
             </div>
-
-
             <div class="col-md-6">
-
-                <p>
-                    Viajes Chile es una propuesta digital orientada a mostrar
-                    destinos turísticos, experiencias y paisajes representativos
-                    del país.
-                </p>
-
-                <p>
-                    El sitio reúne distintos destinos y referencias de viaje
-                    dentro de una experiencia visual diseñada para adaptarse
-                    tanto a computadores como a dispositivos móviles.
-                </p>
-
-                <p>
-                    Desde el desierto del norte hasta los bosques y lagos del sur,
-                    Chile ofrece una amplia variedad de paisajes y experiencias
-                    para descubrir.
-                </p>
-
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aliquam, voluptatem reiciendis eum,
+                    esse totam non corrupti molestiae libero reprehenderit itaque cum dicta at ducimus nam est sunt
+                    accusamus vel. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus et, reiciendis
+                    ratione autem est ipsum dicta tempora voluptates quo illum sapiente sunt id ab laborum vero sequi
+                    cupiditate, numquam quisquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla
+                    nesciunt hic tempore possimus nostrum quos dolores, placeat laudantium praesentium id a saepe minima
+                    ullam et ad dolorum perferendis, consectetur sapiente.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aliquam, voluptatem reiciendis eum,
+                    esse totam non corrupti molestiae libero reprehenderit itaque cum dicta at ducimus nam est sunt
+                    accusamus vel. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus et, reiciendis
+                    ratione autem est ipsum dicta tempora voluptates quo illum sapiente sunt id ab laborum vero sequi
+                    cupiditate, numquam quisquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla
+                    nesciunt hic tempore possimus nostrum quos dolores, placeat laudantium praesentium id a saepe minima
+                    ullam et ad dolorum perferendis, consectetur sapiente.</p>
             </div>
-
         </div>
-
     </section>
-
-
-    <!-- DESTACADOS -->
-
-    <section
-        id="featured"
-        class="container my-5"
-    >
-
+    <section id="featured" class="container my-5">
         <div class="row">
-
             <div class="col-12 text-center">
-
                 <h2>Destacados</h2>
-
                 <hr>
-
             </div>
-
         </div>
-
-
         <div class="row g-0">
-
-
-            <!-- LOS LAGOS -->
-
             <div class="card col-md-6">
-
                 <div class="row g-0">
-
                     <div class="col-md-4">
-
-                        <img
-                            src="./assets/img/card1.jpg"
-                            class="img-fluid rounded-start"
-                            alt="Región de Los Lagos"
-                        >
-
+                        <img src="./assets/img/card1.jpg" class="img-fluid rounded-start" alt="...">
                     </div>
-
-
                     <div class="col-md-8">
-
                         <div class="card-body">
-
-                            <h5 class="card-title">
-                                Región de Los Lagos
-                            </h5>
-
-                            <p class="card-text text-dark">
-                                Lagos, volcanes y bosques forman uno de
-                                los paisajes más característicos del sur
-                                de Chile.
-                            </p>
-
-
-                            <div
-                                class="card-footer d-flex justify-content-between align-items-center"
-                            >
-
-                                <div
-                                    class="left-content d-flex align-items-center"
-                                >
-
+                            <h5 class="card-title">Región de los lagos</h5>
+                            <p class="card-text text-dark">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <div class="card-footer d-flex justify-content-between align-items-center">
+                                <div class="left-content d-flex align-items-center">
                                     <i class="fa-solid fa-plane-up"></i>
-
-                                    <small class="text-body-secondary">
-                                        Vuelos desde
-                                    </small>
-
+                                    <small class="text-body-secondary">Vuelos desde</small>
                                 </div>
-
-                                <small class="price">
-                                    $159.990
-                                </small>
-
+                                <small class="price">$159.990</small>
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
-
-            <!-- ATACAMA -->
-
             <div class="card col-md-6">
-
                 <div class="row g-0">
-
                     <div class="col-md-4">
-
-                        <img
-                            src="./assets/img/card2.jpg"
-                            class="img-fluid rounded-start"
-                            alt="Desierto de Atacama"
-                        >
-
+                        <img src="./assets/img/card2.jpg" class="img-fluid rounded-start" alt="...">
                     </div>
-
-
                     <div class="col-md-8">
-
                         <div class="card-body">
-
-                            <h5 class="card-title">
-                                Desierto de Atacama
-                            </h5>
-
-                            <p class="card-text text-dark">
-                                Paisajes desérticos, salares y cielos
-                                privilegiados en uno de los destinos
-                                más reconocidos del norte de Chile.
-                            </p>
-
-
-                            <div
-                                class="card-footer d-flex justify-content-between align-items-center"
-                            >
-
-                                <div
-                                    class="left-content d-flex align-items-center"
-                                >
-
+                            <h5 class="card-title">Desierto de Atacama</h5>
+                            <p class="card-text text-dark">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <div class="card-footer d-flex justify-content-between align-items-center">
+                                <div class="left-content d-flex align-items-center">
                                     <i class="fa-solid fa-plane-up"></i>
-
-                                    <small class="text-body-secondary">
-                                        Vuelos desde
-                                    </small>
-
+                                    <small class="text-body-secondary">Vuelos desde</small>
                                 </div>
-
-                                <small class="price">
-                                    $189.990
-                                </small>
-
+                                <small class="price">$189.990</small>
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
-
-            <!-- NORTE GRANDE -->
-
             <div class="card col-md-6">
-
                 <div class="row g-0">
-
                     <div class="col-md-4">
-
-                        <img
-                            src="./assets/img/card3.jpg"
-                            class="img-fluid rounded-start"
-                            alt="Norte Grande de Chile"
-                        >
-
+                        <img src="./assets/img/card3.jpg" class="img-fluid rounded-start" alt="...">
                     </div>
-
-
                     <div class="col-md-8">
-
                         <div class="card-body">
-
-                            <h5 class="card-title">
-                                Norte Grande de Chile
-                            </h5>
-
-                            <p class="card-text text-dark">
-                                Descubre la costa, el altiplano y los
-                                contrastes naturales del extremo norte
-                                del país.
-                            </p>
-
-
-                            <div
-                                class="card-footer d-flex justify-content-between align-items-center"
-                            >
-
-                                <div
-                                    class="left-content d-flex align-items-center"
-                                >
-
+                            <h5 class="card-title">Norte grande de Chile</h5>
+                            <p class="card-text text-dark">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <div class="card-footer d-flex justify-content-between align-items-center">
+                                <div class="left-content d-flex align-items-center">
                                     <i class="fa-solid fa-plane-up"></i>
-
-                                    <small class="text-body-secondary">
-                                        Vuelos desde
-                                    </small>
-
+                                    <small class="text-body-secondary">Vuelos desde</small>
                                 </div>
-
-                                <small class="price">
-                                    $289.990
-                                </small>
-
+                                <small class="price">$289.990</small>
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
-
-            <!-- BOSQUES DEL SUR -->
-
             <div class="card col-md-6">
-
                 <div class="row g-0">
-
                     <div class="col-md-4">
-
-                        <img
-                            src="./assets/img/card4.jpg"
-                            class="img-fluid rounded-start"
-                            alt="Bosques del sur de Chile"
-                        >
-
+                        <img src="./assets/img/card4.jpg" class="img-fluid rounded-start" alt="...">
                     </div>
-
-
                     <div class="col-md-8">
-
                         <div class="card-body">
-
-                            <h5 class="card-title">
-                                Bosques del Sur
-                            </h5>
-
-                            <p class="card-text text-dark">
-                                Recorre senderos, bosques nativos
-                                y paisajes naturales en los destinos
-                                verdes del sur de Chile.
-                            </p>
-
-
-                            <div
-                                class="card-footer d-flex justify-content-between align-items-center"
-                            >
-
-                                <div
-                                    class="left-content d-flex align-items-center"
-                                >
-
+                            <h5 class="card-title">Bosque mágico</h5>
+                            <p class="card-text text-dark">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <div class="card-footer d-flex justify-content-between align-items-center">
+                                <div class="left-content d-flex align-items-center">
                                     <i class="fa-solid fa-plane-up"></i>
-
-                                    <small class="text-body-secondary">
-                                        Vuelos desde
-                                    </small>
-
+                                    <small class="text-body-secondary">Vuelos desde</small>
                                 </div>
-
-                                <small class="price">
-                                    $259.990
-                                </small>
-
+                                <small class="price">$259.990</small>
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </div>
-
     </section>
-
-
-    <!-- CONTACTO -->
-
     <section class="container my-5">
-
         <div class="row">
-
             <div class="col-12 text-center">
-
-                <h2>Contacto</h2>
-
+                <h2>Testimonios</h2>
                 <hr>
-
             </div>
-
         </div>
-
-
+    </section>
+    <section class="testimonials container my-5">
+        <div class="testimonial-item">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quis libero quos excepturi fugit magni
+                cumque impedit a temporibus! Minus fuga molestiae ducimus asperiores hic odio modi in blanditiis
+                reprehenderit?</p>
+            <img src="./assets/img/testimonio1.jpg" alt="Mariela" class="avatar">
+            <h5>Mariela</h5>
+        </div>
+        <div class="testimonial-item">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quis libero quos excepturi fugit magni
+                cumque impedit a temporibus! Minus fuga molestiae ducimus asperiores hic odio modi in blanditiis
+                reprehenderit?</p>
+            <img src="./assets/img/testimonio2.jpg" alt="Christian" class="avatar">
+            <h5>Christian</h5>
+        </div>
+        <div class="testimonial-item">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quis libero quos excepturi fugit magni
+                cumque impedit a temporibus! Minus fuga molestiae ducimus asperiores hic odio modi in blanditiis
+                reprehenderit?</p>
+            <img src="./assets/img/testimonio3.jpg" alt="Fernanda" class="avatar">
+            <h5>Fernanda</h5>
+        </div>
+    </section>
+    <section class="container my-5">
         <div class="row">
-
-
-            <!-- FORMULARIO -->
-
-            <form
-                id="myForm"
-                class="col-md-6 my-5"
-            >
-
-                <div class="row">
-
-
-                    <div class="col-md-6 mb-3">
-
-                        <label
-                            for="contactName"
-                            class="form-label text-light"
-                        >
-                            Nombre
-                        </label>
-
-                        <i
-                            class="fa-solid fa-circle-info"
-                            style="color: #ffffff;"
-                            data-bs-toggle="tooltip"
-                            title="Escribe tu nombre completo"
-                        ></i>
-
-                        <input
-                            type="text"
-                            class="form-control"
-                            id="contactName"
-                            placeholder="Nombre"
-                            required
-                        >
-
-                    </div>
-
-
-                    <div class="col-md-6 mb-3">
-
-                        <label
-                            for="contactEmail"
-                            class="form-label text-light"
-                        >
-                            Email
-                        </label>
-
-                        <i
-                            class="fa-solid fa-circle-info"
-                            style="color: #ffffff;"
-                            data-bs-toggle="tooltip"
-                            title="Escribe tu correo electrónico"
-                        ></i>
-
-                        <input
-                            type="email"
-                            class="form-control"
-                            id="contactEmail"
-                            placeholder="nombre@ejemplo.com"
-                            required
-                        >
-
-                    </div>
-
-                </div>
-
-
-                <div class="mb-3">
-
-                    <label
-                        for="contactMessage"
-                        class="form-label text-light"
-                    >
-                        Mensaje
-                    </label>
-
-                    <i
-                        class="fa-solid fa-circle-info"
-                        style="color: #ffffff;"
-                        data-bs-toggle="tooltip"
-                        title="Escribe tu mensaje o consulta"
-                    ></i>
-
-                    <textarea
-                        class="form-control"
-                        id="contactMessage"
-                        rows="3"
-                        required
-                    ></textarea>
-
-                </div>
-
-
-                <div class="mb-3 form-check text-light">
-
-                    <input
-                        class="form-check-input"
-                        type="checkbox"
-                        id="gridCheck"
-                        required
-                    >
-
-                    <label
-                        class="form-check-label"
-                        for="gridCheck"
-                    >
-
-                        <a
-                            href="#"
-                            data-bs-toggle="modal"
-                            data-bs-target="#termsModal"
-                            class="text-light"
-                        >
-                            Acepto los términos y condiciones
-                        </a>
-
-                    </label>
-
-                </div>
-
-
-                <div>
-
-                    <button
-                        type="submit"
-                        class="btn btn-light"
-                    >
-                        Enviar
-                    </button>
-
-                </div>
-
-            </form>
-
-
-            <!-- MODAL -->
-
-            <div
-                class="modal fade"
-                id="termsModal"
-                tabindex="-1"
-                aria-labelledby="termsModalLabel"
-                aria-hidden="true"
-            >
-
-                <div class="modal-dialog">
-
-                    <div class="modal-content">
-
-                        <div class="modal-header">
-
-                            <h5
-                                class="modal-title text-dark"
-                                id="termsModalLabel"
-                            >
-                                Términos y Condiciones
-                            </h5>
-
-                            <button
-                                type="button"
-                                class="btn-close"
-                                data-bs-dismiss="modal"
-                                aria-label="Cerrar"
-                            ></button>
-
-                        </div>
-
-
-                        <div class="modal-body">
-
-                            Este sitio corresponde a un proyecto
-                            demostrativo de desarrollo Frontend.
-
-                            Los destinos, precios e información
-                            mostrados son referenciales y no
-                            corresponden a una agencia de viajes
-                            comercial.
-
-                        </div>
-
-
-                        <div class="modal-footer">
-
-                            <button
-                                type="button"
-                                class="btn btn-secondary"
-                                data-bs-dismiss="modal"
-                            >
-                                Cerrar
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
+            <div class="col-12 text-center">
+                <h2>Contacto</h2>
+                <hr>
             </div>
-
-
-            <!-- INFORMACIÓN DEL PROYECTO -->
-
-            <div
-                class="col-md-6 d-flex flex-column justify-content-center"
-            >
-
-                <div class="mb-3 d-flex align-items-center">
-
-                    <i
-                        class="fa-solid fa-code"
-                        style="color: #ffffff; margin-right: 10px;"
-                    ></i>
-
-                    <span class="text-white">
-                        Proyecto Frontend demostrativo
-                    </span>
-
-                </div>
-
-
-                <div class="mb-3 d-flex align-items-center">
-
-                    <i
-                        class="fa-brands fa-html5"
-                        style="color: #ffffff; margin-right: 10px;"
-                    ></i>
-
-                    <span class="text-white">
-                        HTML5 · CSS3 · SCSS
-                    </span>
-
-                </div>
-
-
-                <div class="mb-3 d-flex align-items-center">
-
-                    <i
-                        class="fa-brands fa-js"
-                        style="color: #ffffff; margin-right: 10px;"
-                    ></i>
-
-                    <span class="text-white">
-                        JavaScript
-                    </span>
-
-                </div>
-
-
-                <div class="mb-3 d-flex align-items-center">
-
-                    <i
-                        class="fa-brands fa-bootstrap"
-                        style="color: #ffffff; margin-right: 10px;"
-                    ></i>
-
-                    <span class="text-white">
-                        Bootstrap 5
-                    </span>
-
-                </div>
-
-            </div>
-
         </div>
-
+        <div class="row">
+            <!-- Formulario -->
+            <form id="myForm" class="col-md-6 my-5">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="exampleFormControlInput1" class="form-label text-light">Nombre</label>
+                        <i class="fa-solid fa-circle-info" style="color: #ffffff;" data-bs-toggle="tooltip" title="Escribe tu nombre completo"></i>
+                        <input type="text" class="form-control" aria-label="First name" placeholder="nombre">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="exampleFormControlInput1" class="form-label text-light">Email</label>
+                        <i class="fa-solid fa-circle-info" style="color: #ffffff;" data-bs-toggle="tooltip" title="Escribe tu correo electrónico"></i>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label text-light">Mensaje</label>
+                    <i class="fa-solid fa-circle-info" style="color: #ffffff;" data-bs-toggle="tooltip" title="Escribe tu mensaje o consulta"></i>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="mb-3 form-check text-light">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal" class="text-light">Acepto los términos y condiciones</a>
+                    </label>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-light">Enviar</button>
+                </div>
+            </form>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-dark" id="termsModalLabel">Términos y Condiciones</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptates perferendis minus quisquam ipsa incidunt. Quae accusamus harum pariatur hic quidem magnam illum, iusto, aspernatur deserunt doloremque voluptas, explicabo enim.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Iconos de contacto -->
+            <div class="col-md-6 d-flex flex-column justify-content-center">
+                <div class="mb-3 d-flex align-items-center">
+                    <i class="fa-solid fa-phone" style="color: #ffffff; margin-right: 10px;"></i>
+                    <a href="tel:+56999887766" class="mb-0 text-white text-decoration-none">+56999887766</a>
+                </div>
+                <div class="mb-3 d-flex align-items-center">
+                    <i class="fa-solid fa-envelope" style="color: #ffffff; margin-right: 10px;"></i>
+                    <a href="mailto:tuemail@gmail.com" class="mb-0 text-white text-decoration-none">tuemail@gmail.com</a>
+                </div>
+                <div class="mb-3 d-flex align-items-center">
+                    <i class="fa-brands fa-linkedin" style="color: #ffffff; margin-right: 10px;"></i>
+                    <a href="https://www.linkedin.com/" class="mb-0 text-white text-decoration-none" target="_blank" >tulinkedin</a>
+                </div>
+                <div class="mb-3 d-flex align-items-center">
+                    <i class="fa-brands fa-square-instagram" style="color: #ffffff; margin-right: 10px;"></i>
+                    <a href="https://www.instagram.com/" class="mb-0 text-white text-decoration-none" target="_blank">Tu Instagram</a>
+                </div>
+            </div>
+            
+        </div>
     </section>
 
 
-    <!-- FONT AWESOME -->
-
-    <script
-        src="https://kit.fontawesome.com/53396029bc.js"
-        crossorigin="anonymous"
-    ></script>
 
 
-    <!-- BOOTSTRAP -->
 
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+
+
+
+
+ 
+
+      
+   
+
+
+    <script src="https://kit.fontawesome.com/53396029bc.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"
-    ></script>
-
-
-    <!-- JQUERY -->
-
-    <script
-        src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-    ></script>
-
-
-    <!-- CUSTOM JS -->
-
-    <script src="./assets/js/index.js"></script>
-
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz4fnFO9gyb4qV2WRw8bIWQnJGnvFq5lZPE0OsLC+eANrR8Hb39IoflIP+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-Ah+g57P6lAqQJcQsEwZ3iU5neJO8U+5u5YeIOKOU+kgv6l6EkxNx8Bgfd3w2a5KE" crossorigin="anonymous"></script>
+        <script src="./assets/js/index.js"></script>
 </body>
 
 </html>
